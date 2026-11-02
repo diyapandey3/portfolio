@@ -2,16 +2,14 @@
 permalink: /
 title: "Diya Pandey"
 excerpt: "About me"
-author_profile: "Tech Enthusiast, Aspiring Researcher"
-redirect_from: 
+author_profile: true
+redirect_from:
   - /about/
   - /about.html
 ---
 
+I am a Computer Science student at Lehigh University with a minor in Applied Mathematics (expected May 2027). My research applies machine learning to scientific problems. I currently work on mechanistic interpretability of chemical language models, and I have also worked on diffusion models for turbulence super-resolution and on computer vision.
 
-## Hey- 
-This is Diya, another human on this pale blue dot:-) this is test to see 
+I am curious about the cosmos and want to explore it through quantum computing. I believe everyone should have equitable opportunities, and I try to help make that true.
 
-Diya is a keen tech and math zenthusiast. She loves to dive deep into the vastness of cosmos and want to explore more about it through quantum computing. She belives everyone should get equiatble opportunities and works to make it true. 
-
-Feel free to connect with her. I believe that no matter how small it is, an act of kindness and initivative can make huge impact on lives of others. So, if you have been working on any such initivative, work or startup don't just say hello. Talk about books, politics, wellness and of course anyway you have been making small initiative to make impact on world. 
+If you are working on an initiative, research project or startup that makes a difference, I would like to hear about it. I am also happy to talk about books, politics, and wellness.

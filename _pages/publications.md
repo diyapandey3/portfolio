@@ -5,11 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
 {% include base_path %}
+
+**In preparation**
+
+- Diya Pandey. *Poly4mer-SAE: A Controllable Polymer LLM for Understanding Molar Structures and Beyond.*
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
