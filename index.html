@@ -4,113 +4,125 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="diya pandey: computer science and applied mathematics at lehigh university. machine learning for scientific problems.">
-<title>diya pandey</title>
+<meta name="description" content="Diya Pandey: Computer Science and Applied Mathematics at Lehigh University. Machine learning for scientific problems.">
+<title>Diya Pandey</title>
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
-:root{--bg:#fff;--fg:#2b2b2b;--mute:#6b6b6b;--link:#1a4f8b;--rule:#e2e2e2;color-scheme:light}
+:root{--bg:#fdfdfc;--fg:#2b2b2b;--mute:#6b6b6b;--link:#1a4f8b;--rule:#e4e4e1;color-scheme:light}
 @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141414;--fg:#d8d8d8;--mute:#9a9a9a;--link:#8ab4f8;--rule:#2c2c2c;color-scheme:dark}}
 :root[data-theme=dark]{--bg:#141414;--fg:#d8d8d8;--mute:#9a9a9a;--link:#8ab4f8;--rule:#2c2c2c;color-scheme:dark}
-body{margin:40px auto;max-width:40rem;padding:0 1rem;font:18px/1.65 Georgia,"Iowan Old Style","Palatino Linotype",serif;color:var(--fg);background:var(--bg)}
+*{box-sizing:border-box}
+body{margin:0;font:18px/1.7 Georgia,"Iowan Old Style","Palatino Linotype",serif;color:var(--fg);background:var(--bg);transition:background .2s,color .2s}
+.wrap{max-width:72rem;margin:0 auto;padding:4rem 2.5rem 3rem;display:grid;grid-template-columns:16rem minmax(0,1fr);gap:4.5rem}
+aside{position:sticky;top:3rem;align-self:start}
+main{max-width:46rem}
 h1,h2{line-height:1.2;font-weight:normal}
-h1{font-size:2rem;margin:0 0 .25rem}
-h2{font-size:1.2rem;margin:2.5rem 0 .75rem;padding-bottom:.25rem;border-bottom:1px solid var(--rule)}
-p,ul{margin:0 0 1rem}
-ul{padding-left:1.25rem}
-li{margin-bottom:.4rem}
+h1{font-size:1.9rem;margin:1.25rem 0 .35rem}
+h2{font-size:1.15rem;margin:3rem 0 1rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule)}
+h2:first-child{margin-top:0}
+p{margin:0 0 1.1rem}
 a,button{color:var(--link)}
-a:focus-visible,button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
-.mute{color:var(--mute)}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
-button{font:inherit;background:none;border:0;padding:0;text-decoration:underline;cursor:pointer}
+a{text-underline-offset:.15em}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 img{max-width:100%;height:auto}
-.photo{float:right;width:8.5rem;margin:.35rem 0 .75rem 1rem;border-radius:4px}
+.photo{display:block;width:100%;border-radius:6px}
 .logo{float:left;width:3.5rem;margin:.2rem .9rem .5rem 0}
-details{margin:0 0 1rem}
+.mute{color:var(--mute)}
+.icon{display:inline-block;margin-left:.5rem;line-height:0;vertical-align:-.15em}
+.icon:hover{opacity:.75}
+.small{font-size:.95rem}
+.links{list-style:none;padding:0;margin:1rem 0 0}
+.links li{margin:0 0 .3rem}
+button{font:inherit;background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:.15em;cursor:pointer}
+details{margin:0 0 1.25rem}
 summary{cursor:pointer;color:var(--link);width:max-content}
-details p{margin:.5rem 0 0}
-footer{margin-top:3rem;font-size:.9rem;color:var(--mute)}
+details p{margin:.6rem 0 0}
+footer{margin-top:3.5rem;font-size:.9rem;color:var(--mute)}
+@media(max-width:56rem){
+  .wrap{display:block;padding:2rem 1.25rem}
+  aside{position:static;margin-bottom:2.5rem}
+  .photo{width:11rem}
+  h1{margin-top:1rem}
+}
+@media(prefers-reduced-motion:reduce){body{transition:none}}
 </style>
 </head>
 <body>
-<header>
-  <div class="top">
-    <h1>diya pandey</h1>
-    <button id="theme" hidden>dark mode</button>
-  </div>
-  <p class="mute">hi! and namaste! computer science + applied mathematics, lehigh university, class of 2027</p>
-  <p>
-    diya [dot] pandey [at] lehigh [dot] edu<br>
-    <a href="cv.pdf">cv [dot] pdf</a> /
-    <a href="https://github.com/diyapandey3">github [dot] com/diyapandey3</a> /
-    <a href="https://www.linkedin.com/in/diya-pandey">linkedin [dot] com/in/diya-pandey</a>
-  </p>
-</header>
+<div class="wrap">
+
+<aside>
+  <img class="photo" src="images/photo.jpg" alt="Photo of Diya" width="256" height="341">
+  <h1>Diya Pandey</h1>
+  <p class="mute small">Computer Science and Applied Mathematics, Lehigh University, class of 2027</p>
+  <p class="small">diya [dot] pandey [at] lehigh [dot] edu</p>
+  <ul class="links">
+    <li><a href="cv.pdf">CV</a></li>
+    <li><a href="https://github.com/diyapandey3">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/diya-pandey">LinkedIn</a></li>
+  </ul>
+  <p class="small" style="margin-top:1rem"><button id="theme" hidden>dark mode</button></p>
+</aside>
 
 <main>
 <h2>about</h2>
-<img class="photo" src="images/photo.jpg" alt="photo of diya" width="136" height="181">
-<p>i am a computer science student at lehigh university, with a minor in applied mathematics. i work on machine learning for scientific problems. right now that means interpretability of chemical language models. i am also interested in quantum computing, and in making technical opportunity more equitable. if you are working on an initiative, a project or a startup like that, don't just say hello. talk to me about books, politics, wellness, and whatever small thing you are doing to make an impact on the world.</p>
+<p>I am a keen tech and math enthusiast. I love diving into the vastness of the cosmos and want to explore it through quantum computing. I believe everyone should have equitable opportunities, and I work to make that true.</p>
+<p>Day to day, I do machine learning research at Lehigh, currently on interpretability of chemical language models.</p>
+<p>No matter how small, an act of kindness or initiative can change lives. If you are working on an initiative, a project, or a startup like that, don't just say hello. Talk to me about books, politics, wellness, and whatever small thing you are doing to make an impact on the world.</p>
 
 <h2>research</h2>
-<p><strong>mechanistic interpretability of chemical language models</strong> <span class="mute">(april 2026 to present)</span><br>
-i train top-k sparse autoencoders on 1.7m polymer embeddings from a chemical language model (poly4mer / smi-ted), then use logistic regression and zero-ablation to test which learned features encode molar group information. first author, <em>poly4mer-sae: a controllable polymer llm for understanding molar structures and beyond</em>, in preparation.</p>
-<li>first author, <em>poly4mer-sae: a controllable polymer llm for understanding molar structures and beyond</em>. in preparation.</li>
-
-<p><strong>diffusion models for atmospheric turbulence super-resolution</strong> <span class="mute">(summer 2026)</span><br>
-i benchmarked a vae, a cnn u-net, an adversarial neural operator, ddpm, and ddim on the johns hopkins turbulence database. the adversarial neural operator approaches state of the art with fewer training samples, and diffusion models outperform the rest.</p>
-<p><strong>speckle analysis of actin dynamics at the lamellipodium</strong> <span class="mute">(summer 2024)</span><br>
-i built models to classify single-particle trajectories across 60+ data sheets, and presented at the lehigh research symposium.</p>
+<p><strong>Mechanistic Interpretability of Chemical Language Models</strong> <span class="mute">(april 2026 to present)</span><br>
+I train Top-K sparse autoencoders on 1.7M polymer embeddings from a chemical language model (Poly4mer / SMI-TED), then use logistic regression and zero-ablation to test which learned features encode molar group information. First author, <em>Poly4mer-SAE: A Controllable Polymer LLM for Understanding Molar Structures and Beyond</em>, in preparation.</p>
+<p><strong>Diffusion Models for Atmospheric Turbulence Super-Resolution</strong> <span class="mute">(summer 2026)</span><br>
+I benchmarked a VAE, a CNN U-Net, an adversarial neural operator, DDPM, and DDIM on the Johns Hopkins Turbulence Database. The adversarial neural operator approaches state of the art with fewer training samples, and diffusion models outperform the rest.</p>
+<p><strong>Speckle Analysis of Actin Dynamics at the Lamellipodium</strong> <span class="mute">(summer 2024)</span><br>
+I built models to classify single-particle trajectories across 60+ data sheets, and presented the work at the Lehigh Research Symposium.</p>
 
 <!-- old site: begin (publications) -->
 <h2>publications</h2>
-<p><strong>an approach for detection of atrial fibrillation using quantum sensor in magnetic induction tomography (mit)</strong> <span class="mute">(2022)</span><br>
+<p><strong>An Approach for Detection of Atrial Fibrillation Using Quantum Sensor in Magnetic Induction Tomography (MIT)</strong> <span class="mute">(2022)</span><br>
 <a href="https://drive.google.com/file/d/11EqAME1AJtaNEEaHor--jRR5VpAFzhEW/view">download</a></p>
 <details><summary>abstract</summary>
-<p>atrial fibrillation (af) is the most common sustained cardiac rhythm disorder characterized by rapid and irregular beating of the atrial chambers of the heart. the prevalence of af is expected to double in the next decades, creating the threat of a global medical challenge. causing more deaths in developed countries than in developing countries, the timely detection of af is still not achieved due to the lack of precise diagnostic and guiding tools, questioning the scientific and technological society of the 21st century. therefore, we identify a promising novel solution of a quantum sensor in mit as a precise diagnostic tool for the detection of atrial fibrillation. a quantum sensor is applied in the system as an excitation detection agent, designed mainly for biomedical applications. the feasibility of this method makes it a promising tool also for other areas such as neurology and oncology.</p>
+<p>Atrial fibrillation (AF) is the most common sustained cardiac rhythm disorder characterized by rapid and irregular beating of the atrial chambers of the heart. The prevalence of AF is expected to double in next decades creating the threat for global medical challenge. Causing more deaths in developed countries rather than developing countries, the timely detection of AF is still not achieved due to the lack of precise diagnostic and guiding tools, questioning the scientific and technological society of the 21st century. Therefore, we identify a promising novel solution of Quantum Sensor in MIT as precise diagnostic tool for the detection of Atrial Fibrillation. A quantum sensor is applied in the system as an excitation detection agent which is designed mainly for biomedical applications. The feasibility of this method makes it a promising tool also for application for other areas such as neurology and oncology.</p>
 </details>
 
-<p><strong>low cost hot air balloon</strong> <span class="mute">(2021)</span><br>
-<a href="https://drive.google.com/file/d/1qs4miaNgyhe-aWyXbfb4lEJLKTMtWW8M/view">download</a></p>
-<details><summary>abstract</summary>
-<p>we developed a lesson-plan and bill of materials which teach students how to build a low-cost high-altitude balloon capable of reaching near-space. this project develops a new method of preparing for and solving the challenges of near space, performing near space experiments using a cost-effective payload tied to a hot air balloon, which requires high skills like problem solving, proper planning, deep analysis, tracking and recovery. hot air balloon payloads provide information on the atmosphere, the universe, the sun, and the near-earth and space environment.</p>
-</details>
+<p><strong>Low Cost Hot Air Balloon</strong> <span class="mute">(2021)</span><br>
+<a href="https://drive.google.com/file/d/1qs4miaNgyhe-aWyXbfb4lEJLKTMtWW8M/view">download</a> /
+<a href="https://2021.spaceappschallenge.org/challenges/statements/near-space-near-you/teams/ecstatic-paradox/project/">project page, NASA Space Apps 2021</a></p>
 
 <!-- old site: end (publications) -->
 
 <h2>projects</h2>
-<p><strong>skillion capstone: facial and object recognition</strong> <span class="mute">(2026)</span><br>
-an end-to-end recognition system with yolo, facenet, and mtcnn, built with sponsors and shipped as a working mvp in one semester.</p>
-<p><strong>alexa assistant for laboratory procedures</strong> <span class="mute">(2023 to present)</span><br>
-a voice app in python that guides scientists through materials science procedures and lab equipment. i lead the project at the nano human interface lab and mentor new lab programmers.</p>
-
+<p><strong>Skillion Capstone: Facial and Object Recognition</strong> <span class="mute">(2026)</span><br>
+An end-to-end recognition system built with YOLO, FaceNet, and MTCNN, developed with sponsors and delivered as a working MVP in one semester.</p>
+<p><strong>Lead Software Developer, Alexa Assistant for Laboratory Procedures</strong> <span class="mute">(2023 to present)</span><br>
+A Python voice app that guides scientists through materials science procedures and lab equipment at the Nano Human Interface Lab. I lead the project and mentor new lab programmers.<br>
+<a href="https://nhi.lehigh.edu/alexa">Lehigh NHI Alexa project</a></p>
 <!-- old site: begin (veggies) -->
-<p><img class="logo" src="images/veggies.png" alt="veggies logo" width="56" height="56"><strong>veggies: connecting farmers with tech</strong><br>
-an android app that uses machine learning to ease farming work: timely crop disease detection, weather alerts, a marketplace for selling produce, and crop suggestions by season, location, and soil ph.</p>
+<p><img class="logo" src="images/veggies.png" alt="Veggies logo" width="56" height="56"><strong>Veggies: Connecting Farmers with Tech</strong><br>
+An Android app that uses machine learning to ease farming work: timely crop disease detection, weather alerts, a marketplace for selling produce, and crop suggestions by season, location, and soil pH.</p>
 <!-- old site: end (veggies) -->
 
 <!-- old site: begin (book review) -->
-<h2>writing</h2>
-<p>welcome to my ted talk :-) i wrote a short review of <em>meditations</em> by marcus aurelius and <em>hisila</em> by hisila yami. if you feel the same about the books, or don't, let's have a short book talk. happy reading!<br>
-<a href="https://medium.com/@_diya/book-review-read-of-the-year-2022-a259fb188bdc">book review: read of the year 2022</a> <span class="mute">(medium, march 2022)</span></p>
+<h2>writing <a class="icon" href="https://medium.com/@_diya" aria-label="Diya on Medium" title="Medium"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><circle cx="7" cy="12" r="6"/><ellipse cx="17" cy="12" rx="3" ry="6"/><rect x="21.3" y="6" width="1.7" height="12" rx=".85"/></svg></a></h2>
+<p>Welcome to my TED talk :-) I wrote a short review of <em>Meditations</em> by Marcus Aurelius and <em>Hisila</em> by Hisila Yami. If you feel the same about the books, or don't, let's have a short book talk. Happy reading!<br>
+<a href="https://medium.com/@_diya/book-review-read-of-the-year-2022-a259fb188bdc">Book Review: Read of the Year 2022</a> <span class="mute">(medium, march 2022)</span></p>
 <!-- old site: end (book review) -->
 
 <h2>leadership</h2>
-<p><strong>president, girls who code, lehigh chapter</strong><br>
-<span class="mute">august 2024 to may 2026</span></p>
-<ul>
-<li>recruited 50+ members and led 15+ events. received the student life and leadership award.</li>
-<li>secured $9,000+ in sponsorships for the harvard wecode conference. as tech fellow for two years, raised lehigh participation by 80%, and was named distinguished tech fellow.</li>
-</ul>
+<p><strong>President, Girls Who Code, Lehigh Chapter</strong> <span class="mute">(august 2024 to may 2026)</span><br>
+Recruited 50+ members, led 15+ events, and secured $9,000+ in sponsorships for the Harvard WeCode conference. Awarded the Student Life and Leadership Award, and named Distinguished Tech Fellow.</p>
 
 <h2>education</h2>
-<p>lehigh university, bs computer science, minor in applied mathematics, expected may 2027.</p>
-<p class="mute">python, java, c++, c, go, javascript, assembly, cuda, linux, hpc / pytorch, tensorflow, keras, scikit-learn, hugging face, langchain, numpy, pandas</p>
-
-</main>
+<p>Lehigh University, BS in Computer Science, minor in Applied Mathematics, expected May 2027.</p>
+<p class="mute small">Python, Java, C++, C, Go, JavaScript, Assembly, CUDA, Linux, HPC / PyTorch, TensorFlow, Keras, scikit-learn, Hugging Face, LangChain, NumPy, Pandas</p>
 
 <footer>last updated november 2026</footer>
+</main>
 
+</div>
 <script>
 var b=document.getElementById("theme"),r=document.documentElement;
 function cur(){return r.dataset.theme||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}
